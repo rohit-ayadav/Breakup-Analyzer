@@ -237,9 +237,9 @@ const BreakupAnalysis = () => {
                         <span className="font-bold text-xl text-gray-800">Relationship Analyzer</span>
                     </div>
                     <ul className="flex space-x-4">
-                        <li><a href="/breakup-analyzer" className="text-gray-600 hover:text-gray-800">Home</a></li>
+                        <li><a href="/" className="text-gray-600 hover:text-gray-800">Home</a></li>
                         <li><a href="/#about" className="text-gray-600 hover:text-gray-800">About</a></li>
-                        <li><a href="/feedback" className="text-gray-600 hover:text-gray-800">Contact</a></li>
+                        <li><a href="https://resourcesandcarrier.online/contact" className="text-gray-600 hover:text-gray-800">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -346,9 +346,9 @@ const BreakupAnalysis = () => {
                         <div className="w-full md:w-1/3 text-center mt-4 md:mt-0">
                             <h4 className="text-lg font-semibold mb-2">Connect with us</h4>
                             <div className="flex justify-center space-x-4">
-                                <a href="/" className="hover:text-pink-400"><FaFacebook size={24} /></a>
-                                <a href="/" className="hover:text-pink-400"><FaTwitter size={24} /></a>
-                                <a href="/" className="hover:text-pink-400"><FaInstagram size={24} /></a>
+                                <a href="https://www.linkedin.com/in/rohitkumaryadav-rky/" className="hover:text-pink-400"><FaFacebook size={24} /></a>
+                                <a href="https://www.linkedin.com/in/rohitkumaryadav-rky/" className="hover:text-pink-400"><FaTwitter size={24} /></a>
+                                <a href="https://www.linkedin.com/in/rohitkumaryadav-rky/" className="hover:text-pink-400"><FaInstagram size={24} /></a>
                             </div>
                         </div>
                         <div className="w-full md:w-1/3 text-center md:text-right mt-4 md:mt-0">
