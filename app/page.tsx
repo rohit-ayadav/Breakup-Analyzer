@@ -52,6 +52,7 @@ const questions = [
 
 const BreakupAnalysis = () => {
     const [currentStep, setCurrentStep] = useState(-1);
+    const [partnerMessage, setPartnerMessage] = useState(false);
     interface AnswersType {
         communication?: string;
         trust?: string;
@@ -239,9 +240,14 @@ const BreakupAnalysis = () => {
     };
 
     const handleStart = () => {
-        if (!yourName.trim() || !partnerName.trim()) {
-            toast.error('Please enter both names');
+        if (!yourName.trim()) {
+            toast.error('Apna naam to daal de bhai');
             return;
+        }
+        if (!partnerName.trim()) {
+            toast.error('Partner ka naam to daalana padega');
+            setPartnerMessage(true);
+            return
         }
         setCurrentStep(0);
     };
@@ -278,7 +284,7 @@ const BreakupAnalysis = () => {
                     </div>
                     <ul className="flex space-x-4">
                         <li><a href="/" className="text-gray-600 hover:text-gray-800">Home</a></li>
-                        <li><a href="/#about" className="text-gray-600 hover:text-gray-800">About</a></li>
+                        <li><a href="https://resourcesandcarrier.online/#about" className="text-gray-600 hover:text-gray-800">About</a></li>
                         <li><a href="https://resourcesandcarrier.online/contact" className="text-gray-600 hover:text-gray-800">Contact</a></li>
                     </ul>
                 </nav>
@@ -306,6 +312,7 @@ const BreakupAnalysis = () => {
                             placeholder="Partner's name"
                             required
                         />
+                        {partnerMessage && <p className="text-grey-500 text-sm mb-4">I have no database 😜, so don't worry about privacy</p>}
                         <button
                             onClick={handleStart}
                             className="px-4 py-2 bg-pink-500 text-white rounded hover:bg-pink-600 w-full transition duration-300"
