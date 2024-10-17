@@ -10,6 +10,12 @@
 4. **Beautiful UI**: The interface is designed with a focus on aesthetics and user experience.
 5. **Responsive Design**: Fully optimized for desktops, tablets, and mobile devices.
 
+## Live Demo
+
+Check out the live version of the app here:  
+[Relationship Analyzer Live](https://breakup-analyzer.resourcesandcarrier.online/)
+
+
 ## Installation
 
 Follow these steps to run the project locally:
