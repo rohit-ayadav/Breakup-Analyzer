@@ -39,3 +39,12 @@ self.addEventListener('activate', (event) => {
         })
     );
 });
+
+// Clear any notifications when the service worker is installed
+self.addEventListener('install', function () {
+    self.registration.getNotifications().then(function (notifications) {
+        notifications.forEach(notification => {
+            notification.close();
+        });
+    });
+});
