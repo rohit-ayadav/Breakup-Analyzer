@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "relationship improvement",
     "relationship evaluation"
   ],
-  manifest: "/manifest.json",
+  manifest: "/manifest.json?v=1",
   authors: [{ name: "Rohit Kumar Yadav" }],
   creator: "Rohit Kumar Yadav",
   publisher: "Rohit Kumar Yadav",
