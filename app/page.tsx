@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaHeart, FaShareAlt, FaPrint } from 'react-icons/fa';
 import { PieChart } from 'react-minimal-pie-chart';
 import { toast, ToastContainer } from 'react-toastify';
@@ -53,6 +53,21 @@ const questions = [
 const BreakupAnalysis = () => {
     const [currentStep, setCurrentStep] = useState(-1);
     const [partnerMessage, setPartnerMessage] = useState(false);
+
+    useEffect(() => {
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker
+                    .register('/sw.js')
+                    .then(function (registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function (err) {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    }, []);
     interface AnswersType {
         communication?: string;
         trust?: string;
